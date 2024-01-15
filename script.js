@@ -22,7 +22,7 @@ for (let i = 0; i < date.length; i++) {
 }
 
 let index = 1;
-function handleAddButtonClick(event) {
+function handleAddButtonClick() {
   if (index < date.length) {
     let newDiv = divAdd.cloneNode(true);
     form.appendChild(newDiv);
