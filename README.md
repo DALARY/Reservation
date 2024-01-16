@@ -21,3 +21,9 @@
 # Difficultés
 Plusieurs difficultés ont été rencontrées durant le développement, notamment le bouton ajouter qui reste toujours dans le premier formulaire crée. 
 La fonctionnalité de supprimer (dans le select) l'option sélectionné dans le formulaire en question.
+
+# Etapes
+- Finaliser la suppression de l'option sélectionner.
+- Bloquer la possibilité de modifier la réservation précédente
+- Bloquer la possibilité d'ajouter une réservation si une date n'est pas sélectionner
+- Ajouter un bouton supprimer pour les réservations précédentes
