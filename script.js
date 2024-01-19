@@ -9,7 +9,6 @@ const date = [
 ];
 const submit = document.querySelectorAll(".submit");
 const add = document.querySelector(".add");
-add.addEventListener("click", handleAddButtonClick);
 const divAdd = document.querySelector(".divAdd");
 const buttonDiv = document.querySelector(".buttonDiv");
 
@@ -21,22 +20,29 @@ for (let i = 0; i < date.length; i++) {
 }
 
 let index = 1;
-function handleAddButtonClick() {
+add.addEventListener("click", () => {
   if (index < date.length) {
     let newDiv = divAdd.cloneNode(true);
     form.insertBefore(newDiv, buttonDiv);
 
-    // Retirer l'option sélectionnée de tous les menus déroulants
-    let allSelects = document.querySelectorAll(".select");
+    // Désactive la balise <select> de la div précédente
+    if (index > 0) {
+      let previousDiv = form.children[index - 1];
+      let previousSelect = previousDiv.querySelector(".select");
+      previousSelect.setAttribute("disabled", "");
 
-    allSelects.forEach((currentSelect) => {
-      let selectedOption = currentSelect.querySelector("option").value
-      if (selectedOption) {
-        currentSelect.remove(selectedOption)
+      let selectIndex = date.indexOf(previousSelect.value);
+      console.log(selectIndex);
+      if (selectIndex !== -1) {
+        date.splice(selectIndex, 1);
       }
-      console.log(selectedOption);
-    });
 
+      // Supprime l'option sélectionnée du nouveau select dans la nouvelle div
+      newDiv.querySelector(".select").remove(selectIndex);
+
+      console.log(selectIndex);
+    }
+    newDiv.querySelector(".select").removeAttribute("disabled");
     index++;
   }
-}
+});
