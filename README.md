@@ -20,7 +20,3 @@
  1. Création du fichier CSS  
  2. Centrer mon formulaire  
  3. Modifier la taille / changer la couleur des boutons  
-
-# Difficultés
-Plusieurs difficultés ont été rencontrées durant le développement, notamment le bouton ajouter qui reste toujours dans le premier formulaire crée. 
-La fonctionnalité de supprimer (dans le select) l'option sélectionné dans le formulaire en question.
