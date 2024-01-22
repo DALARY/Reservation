@@ -1,5 +1,5 @@
 form {
-    margin: 5% 20% 0 20%;
+  margin: 5% 20% 0 20%;
 }
 .divAdd {
   width: 50%; /* Ajustez la largeur selon vos besoins */
@@ -7,7 +7,7 @@ form {
   margin-bottom: 2%;
 }
 
-.divAdd > div {
+.divAdd {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -16,10 +16,10 @@ form {
 
 .select,
 input {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
 }
 
 .buttonDiv {
@@ -43,7 +43,29 @@ button.add {
   background-color: #2196f3;
 }
 
+button:disabled {
+  background-color: grey;
+}
+
+button.delete {
+  display: none;
+  background-color: #d3454c;
+}
+
+button.delete:hover {
+  background-color: #92262c;
+}
+
 button.add,
-button#submit {
+button.submit,
+button.delete {
   width: 100%;
+}
+
+.btnAdd:hover {
+  background-color: #256091;
+}
+
+.btnSubmit:hover {
+  background-color: #287c2b;
 }
