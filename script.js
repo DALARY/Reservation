@@ -14,10 +14,9 @@ const buttonDiv = document.querySelector(".buttonDiv");
 select.addEventListener("change", () => {
   if (select.selectedIndex == 0) {
     add.setAttribute("disabled", "");
-    submit.setAttribute("disabled", "");
   } else {
-    add.removeAttribute("disabled", "");
-    submit.removeAttribute("disabled", "");
+    add.removeAttribute("disabled");
+    submit.removeAttribute("disabled");
     add.classList.add("btnAdd");
     submit.classList.add("btnSubmit");
   }
@@ -96,9 +95,7 @@ add.addEventListener("click", () => {
 
     form.insertBefore(newDiv, buttonDiv);
     add.setAttribute("disabled", "");
-    submit.setAttribute("disabled", "");
     add.classList.remove("btnAdd");
-    submit.classList.remove("btnSubmit");
 
     /* Modification des options du select */
     if (index > 0) {
@@ -131,12 +128,9 @@ add.addEventListener("click", () => {
       newSelect.addEventListener("change", () => {
         if (newSelect.selectedIndex == 0) {
           add.setAttribute("disabled", "");
-          submit.setAttribute("disabled", "");
         } else {
           add.removeAttribute("disabled", "");
-          submit.removeAttribute("disabled", "");
           add.classList.add("btnAdd");
-          submit.classList.add("btnSubmit");
         }
       });
 
