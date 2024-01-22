@@ -10,8 +10,11 @@
  2. Crée un tableau avec des dates  
  3. Ajouter une option à mon select pour chaque élément du tableau  
  4. Utiliser la fonction clone pour ensuite appenChild à mon formulaire les différent champs de selection  
- 5. Ajoutez un bouton 'add' pour permettre de choisir d'autre réservation (fonctionne mais j'ai besoin de le modifier)  
- 6. Retirer les dates déjà réserver (fonctionne mais ne retire pas la date selectionner)  
+ 5. Ajoutez un bouton 'add' pour permettre de choisir d'autre réservation  
+ 6. Retirer les dates déjà réserver
+ 7. Ajouter un bouton supprimer
+ 8. Recrée les options du sélecteur après suppression d'une ou plusieurs réservations
+ 9. Bloquer la possibliter d'ajouter une réservation sans avoir choisie une date et bloquer l'enregistrement si aucun réservation n'est faite
  
  # CSS  
  1. Création du fichier CSS  
@@ -21,9 +24,3 @@
 # Difficultés
 Plusieurs difficultés ont été rencontrées durant le développement, notamment le bouton ajouter qui reste toujours dans le premier formulaire crée. 
 La fonctionnalité de supprimer (dans le select) l'option sélectionné dans le formulaire en question.
-
-# Etapes
-- Finaliser la suppression de l'option sélectionner.
-- Bloquer la possibilité de modifier la réservation précédente
-- Bloquer la possibilité d'ajouter une réservation si une date n'est pas sélectionner
-- Ajouter un bouton supprimer pour les réservations précédentes
