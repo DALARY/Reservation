@@ -14,7 +14,7 @@
  6. Retirer les dates déjà réserver
  7. Ajouter un bouton supprimer
  8. Recrée les options du sélecteur après suppression d'une ou plusieurs réservations
- 9. Bloquer la possibliter d'ajouter une réservation sans avoir choisie une date et bloquer l'enregistrement si aucun réservation n'est faite
+ 9. Bloquer la possibliter d'ajouter une réservation sans avoir choisie une date et bloquer l'enregistrement si aucune réservation n'est faite
  
  # CSS  
  1. Création du fichier CSS  
